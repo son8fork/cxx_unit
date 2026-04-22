@@ -22,7 +22,7 @@ add similar comment matching the Licensor template, but include an additional em
 Apache License 2.0
 NO WARRANTY OF ANY KIND see <http://www.apache.org/licenses/LICENSE-2.0>
 SPDX-License-Identifier: Apache-2.0
-lib: [`NAME`] [LEGEND]
+lib: cxx_unit C++17 Standard CXX Entities Namespace
 
 [CONTRIBUTOR COPYRIGHT NOTICE]
 ```
@@ -36,6 +36,6 @@ source code files should end with comment about `license` name, `warranty` detai
 Apache License 2.0
 NO WARRANTY OF ANY KIND see <http://www.apache.org/licenses/LICENSE-2.0>
 SPDX-License-Identifier: Apache-2.0
-lib: [`NAME`] [LEGEND]
+lib: cxx_unit C++17 Standard CXX Entities Namespace
 Ⓒ Copyright (c) [YEAR] Oleg'Ease'Kharchuk ᦒ
 ```

@@ -1,5 +1,5 @@
-# TEMPLATE
-> Project Legend
+# CXX_UNIT
+> C++17 Standard CXX Entities Namespace
 
 Project Overview
 
