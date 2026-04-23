@@ -1,6 +1,7 @@
 #ifndef SON8_CXX_CORE_HXX
 #define SON8_CXX_CORE_HXX
 
+// std
 #include <array>
 #include <initializer_list>
 #include <limits>
@@ -56,7 +57,7 @@ namespace son8::cxx {
     // -- utility
     using std::as_const;
 
-} // namespace son8
+} // namespace son8::cxx
 
 #endif//SON8_CXX_CORE_HXX
 
