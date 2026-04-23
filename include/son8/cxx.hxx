@@ -1,6 +1,7 @@
 #ifndef SON8_CXX_HXX
 #define SON8_CXX_HXX
 
+#include <son8/cxx/atom.hxx>
 #include <son8/cxx/core.hxx>
 
 #endif//SON8_CXX_HXX
