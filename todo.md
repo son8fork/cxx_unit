@@ -2,7 +2,11 @@
 
 are all tag struct need to be putten into `meta` header?
 are all objects that can throw or has specific exception class needs be putten into `flow` header?
+seems functional should be included in `data` (containers and algorithms)
 
+- _many_
+  - 11 hash: `core?`
+  - 11 uses_allocator: `meta?`
 - new
   - 03 bad_alloc: `flaw?`
   - 11 bad_array_new_length: `flaw?`
@@ -12,7 +16,7 @@ are all objects that can throw or has specific exception class needs be putten i
   - 03 nothrow*: `meta?`
   - 17 hardware_destructive_interference_size, hardware_constructive_interference_size: ?
 - tuple
-  - 11 uses_allocator: `meta?`
+
   - 17 apply: `func?`
   - 11 forward_as_tuple: ?
   - 11 tuple_cat: ?
@@ -27,14 +31,16 @@ are all objects that can throw or has specific exception class needs be putten i
   - 11 move_if_noexcept: `data?`
 
 ## Possible header names
+> used: core, atom
 
+- `atom`: concurrency and multithreading related, atomic operations
+- `core`: base functionality included by everything else
 - `oops`: OOP related or entities with bad reputation (eg regex, iostream)
 - `data`: data structures and algorithms related
 - `meta`: SFINAE and compile-time related, highly generic
 - `help`: some helpers like chrono
 - `text`: all text related
 - `flow`: error handling related and exceptions, control flow related
-- `atom`: concurrency and multithreading related, atomic operations
 - `plan`: highly generaic entities
 
 ## not to do (completed)
@@ -42,6 +48,11 @@ are all objects that can throw or has specific exception class needs be putten i
 any c header related functs, it is under c_header interface library
 
 - array
+- atomic
+- condition_variable
+- future
 - initializer_list
 - limits
+- mutex
+- thread
 
