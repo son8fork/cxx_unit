@@ -7,3 +7,9 @@ add_library( son8::${PROJECT_NAME} ALIAS ${SON8_LIB} )
 target_compile_features( ${SON8_LIB} INTERFACE cxx_std_17 )
 target_compile_options( ${SON8_LIB} INTERFACE $<$<CXX_COMPILER_ID:MSVC>:/utf-8 /permissive- /Zc:__cplusplus> )
 target_include_directories( ${SON8_LIB} INTERFACE include )
+
+# Apache License 2.0
+# NO WARRANTY OF ANY KIND see <http://www.apache.org/licenses/LICENSE-2.0>
+# SPDX-License-Identifier: Apache-2.0
+# lib: cxx_unit C++17 Standard CXX Entities Namespace
+# Ⓒ Copyright (c) 2026 Oleg'Ease'Kharchuk ᦒ
