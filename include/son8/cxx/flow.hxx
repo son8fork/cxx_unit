@@ -12,11 +12,12 @@ namespace son8::cxx {
     // -- exception
     using std::bad_exception;
     using std::exception;
-    // using std::get_unexpected; // depr C++11, rm C++17
     using std::set_terminate;
-    // using std::set_unexpected; // depr C++11, rm C++17
     using std::terminate;
     using std::terminate_handler;
+    // ---- depr-rm?
+    // using std::get_unexpected; // depr C++11, rm C++17
+    // using std::set_unexpected; // depr C++11, rm C++17
     // using std::uncaught_exception; // depr C++17, rm C++20
     // using std::unexpected; // depr C++11, rm C++17
     // using std::unexpected_handler; // depr C++11, rm C++17
@@ -37,6 +38,10 @@ namespace son8::cxx {
     using std::bad_cast;
     using std::bad_typeid;
     // C++11
+    // -- _many_
+    using std::is_error_code_enum; // system_error: ios
+    using std::make_error_code; // system_error: ios
+    using std::make_error_condition; // system_error: ios
     // -- exception
     using std::current_exception;
     using std::exception_ptr;
@@ -52,9 +57,6 @@ namespace son8::cxx {
     using std::error_code;
     using std::error_condition;
     using std::generic_category;
-    using std::make_error_code;
-    using std::make_error_condition;
-    using std::is_error_code_enum;
     using std::is_error_condition_enum;
     using std::system_category;
     using std::system_error;

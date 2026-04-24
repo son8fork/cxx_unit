@@ -43,8 +43,6 @@ namespace son8::cxx {
     using std::add_pointer;
     using std::add_rvalue_reference;
     using std::add_volatile;
-    // using std::align_storage; // depr C++23
-    // using std::align_union; // depr C++23
     using std::alignment_of;
     using std::common_type;
     using std::conditional;
@@ -74,7 +72,6 @@ namespace son8::cxx {
     using std::is_fundamental;
     using std::is_function;
     using std::is_integral;
-    // using std::is_literal_type; // depr C++17, rm C++20
     using std::is_lvalue_reference;
     using std::is_member_function_pointer;
     using std::is_member_object_pointer;
@@ -91,7 +88,6 @@ namespace son8::cxx {
     using std::is_nothrow_move_constructible;
     using std::is_null_pointer;
     using std::is_object;
-    // using std::is_pod; // deprecated C++20
     using std::is_pointer;
     using std::is_polymorphic;
     using std::is_reference;
@@ -100,7 +96,6 @@ namespace son8::cxx {
     using std::is_scalar;
     using std::is_signed;
     using std::is_standard_layout;
-    // using std::is_trivial; // deprecated C++26
     using std::is_trivially_assignable;
     using std::is_trivially_constructible;
     using std::is_trivially_copy_assignable;
@@ -125,8 +120,14 @@ namespace son8::cxx {
     using std::remove_pointer;
     using std::remove_reference;
     using std::remove_volatile;
-    // using std::result_of; // rm C++20
     using std::underlying_type;
+    // ---- depr-rm?
+    // using std::align_storage; // depr C++23
+    // using std::align_union; // depr C++23
+    // using std::is_literal_type; // depr C++17, rm C++20
+    // using std::is_pod; // depr C++20
+    // using std::is_trivial; // depr C++26
+    // using std::result_of; // rm C++20
     // C++14
     // -- type_traits
     using std::is_final;

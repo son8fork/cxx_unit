@@ -62,12 +62,14 @@ namespace son8::cxx {
     using std::wstring;
     // C++11
     // -- codecvt
+    // ---- depr-rm?
     // using std::codecvt_mode; // depr C++17, rm C++26
     // using std::codecvt_utf16; // depr C++17, rm C++26
     // using std::codecvt_utf8; // depr C++17, rm C++26
     // using std::codecvt_utf8_utf16; // depr C++17, rm C++26
     // -- locale
     using std::isblank;
+    // ---- depr-rm?
     // using std::wbuffer_convert; // depr C++17, rm C++26
     // using std::wstring_convert; // depr C++17, rm C++26
     // -- regex
