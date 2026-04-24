@@ -6,7 +6,6 @@ seems functional should be included in `data` (containers and algorithms)
 seems memory should be coupled with `data` (no at least because of unique_ptr that must be core)
 
 - _many_
-  - 11 hash: `core?`
   - 11 uses_allocator: `core?`
 - new
   - 17 align_val_t: `meta?`
@@ -27,48 +26,17 @@ seems memory should be coupled with `data` (no at least because of unique_ptr th
   - 17 in_place* tags
   - 11 move_if_noexcept: `data?`
 
-## Possible header names
-> used: `core`, `atom`, `meta`, `data`
+## remaining
+> `code`: algorithm complex execution numeric random valarray
 
-- `atom`: concurrency and multithreading related, atomic operations
-- `code`: algorithms related
-- `core`: base functionality included by everything else
-- `data`: data structures
-- `flow`: error handling related and exceptions, control flow related
-- `func`: functional related
-- `help`: some helpers like chrono
-- `meta`: SFINAE and compile-time related, highly generic
-- `oops`: OOP related or entities with bad reputation (eg regex, iostream)
-- `plan`: highly generaic entities
-- `text`: all text related
-
-## not to do (completed)
-
-any c header related functs, it is under c_header interface library
-
-- array
-- atomic
-- condition_variable
-- deque
-- exception
-- forward_list
-- future
-- initializer_list
-- limits
-- list
-- map
-- memory_resource
-- mutex
-- queue
-- ratio
-- set
-- stack
-- stdexcept
-- system_error;
-- thread
-- type_traits
-- typeindex
-- typeinfo
-- unordered_map
-- unordered_set
-- vector
+- any
+- bitset
+- chrono
+- functional
+- iterator
+- memory
+- new
+- optional
+- tuple
+- utility
+- variant
