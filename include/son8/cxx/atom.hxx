@@ -42,7 +42,6 @@ namespace son8::cxx {
     using std::atomic_schar;
     using std::atomic_long;
     using std::atomic_llong;
-    // using std::atomic_init; // deprecated C++20
     using std::atomic_int;
     using std::atomic_int8_t;
     using std::atomic_int16_t;
@@ -88,8 +87,10 @@ namespace son8::cxx {
     using std::atomic_ushort;
     using std::atomic_uchar;
     using std::atomic_wchar_t;
-    // using std::kill_dependancy; // deprecated C++26
     using std::memory_order;
+    // ---- depr-rm?
+    // using std::atomic_init; // deprecated C++20
+    // using std::kill_dependency; // deprecated C++26
     // -- condition_variable
     using std::condition_variable;
     using std::condition_variable_any;
