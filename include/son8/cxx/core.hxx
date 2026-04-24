@@ -7,6 +7,8 @@
 #include <limits>
 #include <new>
 #include <tuple>
+#include <typeindex>
+#include <typeinfo>
 #include <utility>
 
 namespace son8::cxx {
@@ -17,6 +19,8 @@ namespace son8::cxx {
     using std::float_denorm_style;
     using std::float_round_style;
     using std::numeric_limits;
+    // -- typeinfo
+    using std::type_info;
     // -- utility
     using std::make_pair;
     using std::pair;
@@ -36,6 +40,8 @@ namespace son8::cxx {
     using std::make_tuple;
     using std::tuple;
     using std::tie;
+    // -- typeindex
+    using std::type_index;
     // -- utility
     using std::forward;
     using std::move;
