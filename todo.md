@@ -3,14 +3,12 @@
 are all tag struct need to be putten into `meta` header?
 are all objects that can throw or has specific exception class needs be putten into `flow` header?
 seems functional should be included in `data` (containers and algorithms)
-seems memory should be coupled with `data`
+seems memory should be coupled with `data` (no at least because of unique_ptr that must be core)
 
 - _many_
   - 11 hash: `core?`
-  - 11 uses_allocator: `meta?`
+  - 11 uses_allocator: `core?`
 - new
-  - 03 bad_alloc: `flow?`
-  - 11 bad_array_new_length: `flow?`
   - 17 align_val_t: `meta?`
   - 03 *new_handler: ?
   - 11 get_new_handler: ?
@@ -24,7 +22,6 @@ seems memory should be coupled with `data`
 - utility
   - 03 rel_ops: `meta?`
   - 11 declval: `meta?`
-  - 14 integer_sequence: ?
   - 17 monostate: forward declared, main header is variant
   - 11 piecewise_construct* tags
   - 17 in_place* tags
@@ -53,6 +50,7 @@ any c header related functs, it is under c_header interface library
 - atomic
 - condition_variable
 - deque
+- exception
 - forward_list
 - future
 - initializer_list
@@ -65,8 +63,12 @@ any c header related functs, it is under c_header interface library
 - ratio
 - set
 - stack
+- stdexcept
+- system_error;
 - thread
 - type_traits
+- typeindex
+- typeinfo
 - unordered_map
 - unordered_set
 - vector
