@@ -6,6 +6,7 @@
 #include <son8/cxx/flow.hxx>
 #include <son8/cxx/data.hxx>
 #include <son8/cxx/meta.hxx>
+#include <son8/cxx/text.hxx>
 
 #endif//SON8_CXX_HXX
 
