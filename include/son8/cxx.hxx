@@ -5,6 +5,7 @@
 #include <son8/cxx/core.hxx>
 #include <son8/cxx/file.hxx>
 #include <son8/cxx/flow.hxx>
+#include <son8/cxx/func.hxx>
 #include <son8/cxx/data.hxx>
 #include <son8/cxx/meta.hxx>
 #include <son8/cxx/text.hxx>

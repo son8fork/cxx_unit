@@ -4,11 +4,12 @@
 #include <son8/cxx/core.hxx>
 // std
 #include <charconv>
-// #include <codecvt> // depr C++17, rm C++26
 #include <locale>
 #include <regex>
 #include <string>
 #include <string_view>
+// depr-rm?
+// #include <codecvt> // depr C++17, rm C++26
 
 namespace son8::cxx {
     // C++03
