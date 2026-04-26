@@ -91,6 +91,10 @@ namespace son8::cxx {
     using std::norm;
     using std::polar;
     using std::real;
+    // -- memory<-core.hxx
+    using std::uninitialized_copy;
+    using std::uninitialized_fill;
+    using std::uninitialized_fill_n;
     // -- numeric
     using std::accumulate;
     using std::adjacent_difference;
@@ -127,6 +131,8 @@ namespace son8::cxx {
     using std::shuffle;
     // -- complex
     using std::proj;
+    // -- memory<-core.hxx
+    using std::uninitialized_copy_n;
     // -- numeric
     using std::iota;
     // -- random
@@ -175,6 +181,19 @@ namespace son8::cxx {
     using std::sample;
     // -- execution
     using std::is_execution_policy;
+    // -- functional<-core.hxx
+    using std::default_searcher;
+    using std::boyer_moore_horspool_searcher;
+    using std::boyer_moore_searcher;
+    // -- memory<-core.hxx
+    using std::destroy;
+    using std::destroy_n;
+    using std::uninitialized_default_construct;
+    using std::uninitialized_default_construct_n;
+    using std::uninitialized_move;
+    using std::uninitialized_move_n;
+    using std::uninitialized_value_construct;
+    using std::uninitialized_value_construct_n;
     // -- numeric
     using std::exclusive_scan;
     using std::gcd;

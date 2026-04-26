@@ -8,6 +8,11 @@
 
 namespace son8::cxx {
     // C++11
+    // -- functional<-core.hxx
+    using std::is_bind_expression;
+    using std::is_placeholder;
+    // -- memory<-core.hxx
+    using std::uses_allocator;
     // -- ratio
     using std::atto;
     using std::centi;
@@ -122,8 +127,8 @@ namespace son8::cxx {
     using std::remove_volatile;
     using std::underlying_type;
     // ---- depr-rm?
-    // using std::align_storage; // depr C++23
-    // using std::align_union; // depr C++23
+    // using std::aligned_storage; // depr C++23
+    // using std::aligned_union; // depr C++23
     // using std::is_literal_type; // depr C++17, rm C++20
     // using std::is_pod; // depr C++20
     // using std::is_trivial; // depr C++26
@@ -134,23 +139,146 @@ namespace son8::cxx {
     // -- utility<-core
     using std::integer_sequence;
     // C++17
+    // -- functional<-core.hxx
+    using std::is_bind_expression_v;
+    using std::is_placeholder_v;
+    // -- memory<-core.hxx
+    using std::uses_allocator_v;
     // -- type_traits
+    using std::add_const_t;
+    using std::add_cv_t;
+    using std::add_lvalue_reference_t;
+    using std::add_pointer_t;
+    using std::add_rvalue_reference_t;
+    using std::add_volatile_t;
+    using std::alignment_of_v;
     using std::bool_constant;
+    using std::common_type_t;
+    using std::conditional_t;
     using std::conjunction;
+    using std::conjunction_v;
     using std::disjunction;
+    using std::disjunction_v;
+    using std::decay_t;
+    using std::enable_if_t;
+    using std::extent_v;
     using std::has_unique_object_representations;
+    using std::has_unique_object_representations_v;
+    using std::has_virtual_destructor_v;
     using std::invoke_result;
+    using std::invoke_result_t;
+    using std::is_abstract_v;
     using std::is_aggregate;
+    using std::is_aggregate_v;
+    using std::is_arithmetic_v;
+    using std::is_array_v;
+    using std::is_assignable_v;
+    using std::is_base_of_v;
+    using std::is_class_v;
+    using std::is_compound_v;
+    using std::is_constructible_v;
+    using std::is_const_v;
+    using std::is_convertible_v;
+    using std::is_copy_assignable_v;
+    using std::is_copy_constructible_v;
+    using std::is_default_constructible_v;
+    using std::is_destructible_v;
+    using std::is_empty_v;
+    using std::is_enum_v;
+    using std::is_final_v;
+    using std::is_floating_point_v;
+    using std::is_function_v;
+    using std::is_fundamental_v;
+    using std::is_integral_v;
     using std::is_invocable;
+    using std::is_invocable_v;
     using std::is_invocable_r;
+    using std::is_invocable_r_v;
+    using std::is_lvalue_reference_v;
+    using std::is_member_function_pointer_v;
+    using std::is_member_object_pointer_v;
+    using std::is_member_pointer_v;
+    using std::is_move_assignable_v;
+    using std::is_move_constructible_v;
+    using std::is_nothrow_assignable_v;
+    using std::is_nothrow_constructible_v;
+    using std::is_nothrow_copy_assignable_v;
     using std::is_nothrow_invocable;
+    using std::is_nothrow_invocable_v;
     using std::is_nothrow_invocable_r;
+    using std::is_nothrow_invocable_r_v;
     using std::is_nothrow_swappable;
+    using std::is_nothrow_swappable_v;
     using std::is_nothrow_swappable_with;
+    using std::is_nothrow_swappable_with_v;
+    using std::is_nothrow_copy_constructible_v;
+    using std::is_nothrow_default_constructible_v;
+    using std::is_nothrow_destructible_v;
+    using std::is_nothrow_move_assignable_v;
+    using std::is_nothrow_move_constructible_v;
+    using std::is_null_pointer_v;
+    using std::is_object_v;
+    using std::is_pointer_v;
+    using std::is_polymorphic_v;
+    using std::is_reference_v;
+    using std::is_rvalue_reference_v;
+    using std::is_same_v;
+    using std::is_scalar_v;
+    using std::is_signed_v;
+    using std::is_standard_layout_v;
     using std::is_swappable;
+    using std::is_swappable_v;
     using std::is_swappable_with;
+    using std::is_swappable_with_v;
+    using std::is_trivially_assignable_v;
+    using std::is_trivially_constructible_v;
+    using std::is_trivially_copy_assignable_v;
+    using std::is_trivially_copy_constructible_v;
+    using std::is_trivially_copyable_v;
+    using std::is_trivially_default_constructible_v;
+    using std::is_trivially_destructible_v;
+    using std::is_trivially_move_assignable_v;
+    using std::is_trivially_move_constructible_v;
+    using std::is_union_v;
+    using std::is_unsigned_v;
+    using std::is_void_v;
+    using std::is_volatile_v;
+    using std::make_signed_t;
+    using std::make_unsigned_t;
     using std::negation;
+    using std::negation_v;
+    using std::rank_v;
+    using std::remove_all_extents_t;
+    using std::remove_const_t;
+    using std::remove_cv_t;
+    using std::remove_extent_t;
+    using std::remove_pointer_t;
+    using std::remove_reference_t;
+    using std::remove_volatile_t;
+    using std::underlying_type_t;
     using std::void_t;
+    // ---- depr-rm?
+    // using std::aligned_storage_t; // depr C++23
+    // using std::aligned_union_t; // depr C++23
+    // using std::is_literal_type_v; // depr C++17, rm C++20
+    // using std::is_pod_v; // depr C++20
+    // using std::is_trivial_v; // depr C++26
+    // using std::result_of_t; // rm C++20
+    // -- variant<-core.hxx
+    using std::variant_alternative;
+    using std::variant_alternative_t;
+    using std::variant_size;
+    using std::variant_size_v;
+
+    namespace chrono {
+        // C++11
+        // -- chrono
+        using std::chrono::treat_as_floating_point;
+        // C++17
+        // -- chrono
+        using std::chrono::treat_as_floating_point_v;
+    }
+
 } // namespace son8::cxx
 
 #endif//SON8_CXX_META_HXX

@@ -107,6 +107,17 @@ namespace son8::cxx {
     using std::packaged_task;
     using std::promise;
     using std::shared_future;
+    // -- memory<-core.hxx
+    using std::allocate_shared;
+    using std::const_pointer_cast;
+    using std::dynamic_pointer_cast;
+    using std::enable_shared_from_this;
+    using std::get_deleter;
+    using std::make_shared;
+    using std::owner_less;
+    using std::shared_ptr;
+    using std::static_pointer_cast;
+    using std::weak_ptr;
     // -- mutex
     using std::adopt_lock;
     using std::adopt_lock_t;
@@ -131,6 +142,8 @@ namespace son8::cxx {
     using std::shared_lock;
     using std::shared_timed_mutex;
     // C++17
+    // -- memory<-core.hxx
+    using std::reinterpret_pointer_cast;
     // -- mutex
     using std::scoped_lock;
     // -- shared_mutex

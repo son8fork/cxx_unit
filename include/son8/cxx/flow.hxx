@@ -24,6 +24,8 @@ namespace son8::cxx {
     // -- new<-core.hxx
     using std::bad_alloc;
     using std::bad_array_new_length;
+    using std::new_handler;
+    using std::set_new_handler;
     // -- stdexcept
     using std::domain_error;
     using std::invalid_argument;
@@ -51,6 +53,12 @@ namespace son8::cxx {
     using std::rethrow_exception;
     using std::rethrow_if_nested;
     using std::throw_with_nested;
+    // -- functional<-core.hxx
+    using std::bad_function_call;
+    // -- memory<-core.hxx
+    using std::bad_weak_ptr;
+    // -- new<-core.hxx
+    using std::get_new_handler;
     // -- system_error
     using std::errc;
     using std::error_category;
@@ -61,8 +69,14 @@ namespace son8::cxx {
     using std::system_category;
     using std::system_error;
     // C++17
+    // -- any<-core.hxx
+    using std::bad_any_cast;
     // -- exception
     using std::uncaught_exceptions;
+    // -- optional
+    using std::bad_optional_access;
+    // -- variant<-core.hxx
+    using std::bad_variant_access;
 } // namespace son8::cxx
 
 #endif//SON8_CXX_FLOW_HXX

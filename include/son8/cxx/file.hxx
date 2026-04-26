@@ -88,6 +88,11 @@ namespace son8::cxx {
     using std::wiostream;
     using std::wistream;
     using std::ws;
+    // -- iterator<-core.hxx
+    using std::istream_iterator;
+    using std::istreambuf_iterator;
+    using std::ostream_iterator;
+    using std::ostreambuf_iterator;
     // -- ostream
     using std::basic_ostream;
     using std::endl;
